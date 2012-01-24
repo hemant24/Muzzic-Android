@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="120dp"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btn_SystemMusicInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1"
+            android:padding="30dp"
+            android:text="My Music"
+            android:width="200dp" />
+
+        <Button
+            android:id="@+id/btn_TopOfTheWeek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/btn_SystemMusicInfo"
+            android:layout_below="@+id/btn_SystemMusicInfo"
+            android:layout_marginTop="27dp"
+            android:layout_weight="1"
+            android:text="Week Toppers"
+            android:width="200dp"
+            android:padding="30dp" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

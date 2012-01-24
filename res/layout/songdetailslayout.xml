@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/pause"
+            android:layout_below="@+id/pause" >
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <EditText
+                    android:id="@+id/txt_lyricspane"
+                    android:layout_width="322dp"
+                    android:layout_height="285dp"
+                    android:cursorVisible="false"
+                    android:editable="false"
+                    android:inputType="none"
+                    android:textSize="14dp" >
+
+                    <requestFocus />
+                </EditText>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linearLayout1" >
+
+        <ImageView
+            android:id="@+id/img_imagepane"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:scaleX="1"
+            android:scaleY="1.2"
+            android:src="@drawable/ic_launcher" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="-10dp"
+            android:layout_marginTop="-14dp"
+            android:clickable="false"
+            android:isIndicator="true"
+            android:scaleX="0.4"
+            android:scaleY="0.4" />
+
+        <ImageButton
+            android:id="@+id/play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/relativeLayout1"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="20dp"
+            android:onClick="playSong"
+            android:scaleX="0.6"
+            android:scaleY="0.6"
+            android:src="@android:drawable/ic_media_play" />
+
+        <ImageButton
+            android:id="@+id/pause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayout1"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="20dp"
+            android:onClick="stopSong"
+            android:scaleX="0.6"
+            android:scaleY="0.6"
+            android:src="@android:drawable/ic_media_pause" />
+        
+        <LinearLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:orientation="vertical" android:layout_marginTop="70dp" >
+        
+
+        <TextView
+            android:id="@+id/txt_songname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+             />
+
+        <TextView
+            android:id="@+id/txt_artistname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+             />
+
+        <TextView
+            android:id="@+id/txt_albumname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+             />
+
+        <TextView
+            android:id="@+id/txt_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="2009" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
